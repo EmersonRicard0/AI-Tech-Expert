@@ -1,5 +1,7 @@
 # AI Tech Expert
 
+![Captura de tela da aplicação em funcionamento](assets/tela_de_app.png)
+
 Este é um assistente de IA construído com Python, que utiliza a API do Gemini. Ele pode ser executado em macOS e Windows.
 
 ## Pré-requisitos
@@ -40,6 +42,8 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento:
 ### Configuração da API do Gemini
 
 Para que o aplicativo funcione, é necessário configurar a sua chave de API do Gemini.
+
+![Captura de tela da configuração da chave de API](assets/tela_chave_api.png)
 
 1.  **Obtenha sua chave:**
     Acesse o [Google AI Studio](https://ai.google.dev/docs/get_started_and_auth), siga as instruções para criar uma chave e copie-a.
