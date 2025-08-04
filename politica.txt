@@ -1,0 +1,76 @@
+Política de Privacidade do AI Tech Expert
+Esta Política de Privacidade descreve como o aplicativo "AI Tech Expert" ("o Aplicativo"), desenvolvido por [O Seu Nome/Nome da Entidade], recolhe, utiliza, armazena e protege as informações dos seus utilizadores. O AI Tech Expert é uma aplicação de desktop que processa dados localmente, com interação com a Google Gemini API.
+
+1. Informações Recolhidas e Como São Utilizadas
+O Aplicativo foi projetado com foco na privacidade do utilizador e no processamento local de dados. As informações recolhidas e utilizadas são as seguintes:
+
+Chave de API do Google Gemini:
+
+Recolha: A sua chave de API do Google Gemini é fornecida diretamente por si e é necessária para que o Aplicativo possa comunicar com o modelo de inteligência artificial do Google.
+
+Armazenamento: Esta chave é armazenada de forma segura no cofre de senhas do seu sistema operativo (keyring), um local seguro e encriptado, e não é guardada em ficheiros de texto simples nem partilhada com terceiros pelo Aplicativo.
+
+Utilização: A chave é usada exclusivamente para autenticar as suas requisições à Google Gemini API, permitindo que o Aplicativo envie as suas perguntas e receba as respostas da IA.
+
+Conteúdo dos Documentos (PDFs e TXTs):
+
+Recolha: Quando utiliza a funcionalidade "Gerir Base de Conhecimento" para adicionar ficheiros PDF e TXT (seja localmente ou via integração com o Google Drive), o Aplicativo extrai o texto desses documentos.
+
+Armazenamento: O texto extraído é armazenado no banco de dados SQLite local do Aplicativo (ficheiro knowledge_base.db), localizado numa pasta segura no seu sistema (ver Secção 3). Os ficheiros originais (PDFs/TXTs) não são movidos ou copiados para esta pasta após a extração, a menos que sejam ficheiros temporários para processamento.
+
+Utilização: O texto extraído é usado para enriquecer o contexto das suas perguntas à IA (funcionalidade de Retrieval Augmented Generation - RAG), permitindo que a IA forneça respostas mais precisas e informadas com base nos seus próprios documentos.
+
+Histórico da Conversa:
+
+Recolha: As suas interações (perguntas e respostas da IA) são registadas.
+
+Armazenamento: O histórico da conversa é guardado num ficheiro de texto local (historico_conversa.txt) numa pasta segura no seu sistema (ver Secção 3).
+
+Utilização: O histórico é utilizado para manter o contexto da conversa com a IA, permitindo que as respostas subsequentes sejam mais coerentes e relevantes.
+
+Definições do Utilizador:
+
+Recolha: As suas preferências de tema (claro/escuro), família de fonte e paleta de cores são recolhidas quando as altera na interface.
+
+Armazenamento: Estas definições são guardadas num ficheiro JSON local (settings.json) numa pasta segura no seu sistema (ver Secção 3).
+
+Utilização: Para personalizar a sua experiência de utilizador no Aplicativo.
+
+2. Partilha de Informações com Terceiros
+O Aplicativo "AI Tech Expert" não partilha diretamente as suas informações pessoais ou o conteúdo dos seus documentos com terceiros.
+
+Google Gemini API: As suas perguntas e o contexto relevante (incluindo trechos dos seus documentos e histórico da conversa) são enviados para a Google Gemini API para processamento. A utilização desses dados pela Google está sujeita à Política de Privacidade da Google. É importante que reveja a política de privacidade da Google para entender como eles tratam os dados enviados para os seus modelos de IA.
+
+Google Drive API: Para a integração com o Google Drive, o Aplicativo autentica-se com a sua conta Google e acede apenas aos ficheiros PDF e TXT que você explicitamente seleciona para listar e baixar. O Aplicativo não tem acesso a outros dados do seu Google Drive sem a sua permissão explícita. O conteúdo dos ficheiros é baixado para processamento local e não é re-enviado para o Google Drive.
+
+3. Armazenamento e Segurança dos Dados
+Todos os dados recolhidos pelo Aplicativo são armazenados localmente no seu computador numa pasta de dados de utilizador segura, específica para o Aplicativo:
+
+macOS: ~/Library/Application Support/AITechExpert/
+
+Windows: %APPDATA%\AITechExpert\
+
+Linux/Outros: ~/.AITechExpert/
+
+A sua chave de API do Gemini é armazenada no cofre de senhas do sistema (keyring), que é um método seguro para guardar credenciais sensíveis no seu sistema operativo.
+
+Embora o Aplicativo tome medidas para proteger os seus dados locais, a segurança final do seu computador e dos dados armazenados nele é da sua responsabilidade.
+
+4. Controlo do Utilizador sobre os Dados
+Você tem controlo total sobre os seus dados dentro do Aplicativo:
+
+Chave de API: Pode remover a sua chave de API a qualquer momento através das definições do Aplicativo. Isso fará com que o Aplicativo seja encerrado e a chave seja eliminada do keyring.
+
+Documentos da Base de Conhecimento: Pode adicionar e excluir documentos da sua base de conhecimento a qualquer momento através da janela "Gerir Base de Conhecimento". A exclusão remove o texto do documento do banco de dados SQLite local.
+
+Histórico da Conversa: Pode limpar todo o histórico da conversa através das definições do Aplicativo. Isso eliminará o ficheiro historico_conversa.txt.
+
+Definições: As suas definições são guardadas localmente e podem ser alteradas a qualquer momento.
+
+5. Alterações a Esta Política de Privacidade
+Esta Política de Privacidade pode ser atualizada periodicamente. Quaisquer alterações serão comunicadas através de atualizações do Aplicativo ou na sua documentação. A sua utilização continuada do Aplicativo após quaisquer alterações constitui a sua aceitação das mesmas.
+
+6. Contacto
+Se tiver alguma questão ou preocupação sobre esta Política de Privacidade ou sobre as práticas de dados do Aplicativo, por favor, entre em contacto com o desenvolvedor através de [Seu Email de Contacto ou Link para Repositório GitHub].
+
+Última atualização: 4 de agosto de 2025
