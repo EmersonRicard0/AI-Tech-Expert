@@ -62,12 +62,7 @@ bash
 Copiar
 Editar
 pip install -r requirements.txt
-4. Inicie o servidor Flask (em outro terminal)
-bash
-Copiar
-Editar
-python server.py
-5. Rode a interface gráfica
+4. Rode a interface gráfica
 bash
 Copiar
 Editar
