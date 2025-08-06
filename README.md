@@ -4,7 +4,8 @@
 
 Um assistente de desktop inteligente com interface moderna, IA poderosa e base de conhecimento personalizada.
 
-![Screenshot do AI Tech Expert](assets/1.png)
+![Screenshot do AI Tech Expert]
+<img src="assets/screenshot.png" alt="Screenshot do AI Tech Expert" width="600"/>
 
 ---
 
