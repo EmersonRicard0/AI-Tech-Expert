@@ -123,12 +123,3 @@ create-dmg (npm)
 
 Desenvolvido com 💻 por **Emerson Silva Ricardo**
 📧 [silvaemerson797@gmail.com](mailto:emerson.ricardo@gmail.com)
-
----
-
-```
-
-Se quiser, posso te ajudar a gerar esse `README.md` direto em um arquivo. Só dizer "gera o arquivo aí" que eu já te entrego prontinho pra usar!
-
-Curtiu o visual e organização? Quer adicionar selo de build, GIF ou badge? Posso turbinar isso ainda mais! 💪
-```
