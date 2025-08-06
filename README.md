@@ -1,54 +1,83 @@
-AI Tech Expert 🤖
+
+````markdown
+# 🤖 AI Tech Expert
+
 Um assistente de desktop inteligente com interface moderna, IA poderosa e base de conhecimento personalizada.
 
-<img src="assets/1.png" alt="Screenshot do AI Tech Expert" width="600"/>
-🚀 Sobre o Projeto
-O AI Tech Expert vai muito além de um simples chatbot: é uma ferramenta de produtividade com inteligência artificial, desenvolvida em Python, que utiliza a API Google Gemini 1.5 Flash. Ele permite consultas inteligentes com base em documentos locais (PDFs e TXTs) e perfis de IA dinâmicos, adaptando o tom e a profundidade técnica das respostas de acordo com o perfil selecionado.
+![Screenshot do AI Tech Expert](assets/1.png)
 
-✨ Funcionalidades
-✅ Perfis de Especialistas
-Altere entre perfis como Engenheiro de Redes, SysAdmin Linux ou Professor Didático.
+---
 
-📂 Base de Conhecimento Personalizada
-Adicione seus próprios arquivos (PDFs, manuais, artigos) para que a IA utilize como fonte.
+## 🚀 Sobre o Projeto
 
-<img src="assets/5.png" alt="Screenshot do AI Tech Expert" width="600"/>
+O **AI Tech Expert** vai muito além de um simples chatbot: é uma ferramenta de produtividade com inteligência artificial, desenvolvida em **Python**, que utiliza a **API Google Gemini 1.5 Flash**.
 
-🖼️ Interface Moderna com CustomTkinter
-Tema claro e escuro, visual clean, fácil de navegar.
-<img src="assets/2.png" alt="Screenshot do AI Tech Expert" width="600"/>
+A IA é capaz de:
+- Ler e entender **documentos locais** (PDFs e TXTs),
+- Assumir **perfis de especialista** que adaptam o tom e a profundidade técnica das respostas.
 
-🗃️ Gestão de Conversas
-Histórico de chats salvo automaticamente, com opção de apagar.
+---
 
-🔒 Segurança de API
-A chave da API Gemini é armazenada com segurança usando o Keyring do sistema operacional.
+## ✨ Funcionalidades
 
-🛠️ Resiliência na Comunicação com a API
-Controle de limites de tokens e tentativas automáticas em caso de falhas.
+### ✅ Perfis de Especialistas
+- **Engenheiro de Redes**
+- **SysAdmin Linux**
+- **Professor Didático**
+- *...e outros perfis que você pode adicionar!*
 
-🛠️ Tecnologias Utilizadas
-Componente	Descrição
-Linguagem	Python 3.10+
-GUI	CustomTkinter
-Backend	Flask (servidor local)
-IA	Google Gemini API (gemini-1.5-flash-latest)
-Banco de Dados	SQLite
-Leitor de PDFs	PyPDF2
-Segurança	Keyring para armazenamento seguro da API key
+### 📂 Base de Conhecimento Personalizada
+- Faça upload de PDFs, artigos técnicos ou manuais.
+- A IA consulta seus arquivos como fonte primária.
 
-⚙️ Como Executar
-✅ Pré-requisitos
-Python 3.10 ou superior
+![Base de Conhecimento](assets/5.png)
 
-Conta no Google Cloud com acesso à Gemini API
+### 🖼️ Interface Moderna com CustomTkinter
+- Visual clean, temas claro e escuro.
+- Navegação fluida e responsiva.
 
-Chave de API do Gemini
+![Interface](assets/2.png)
 
-🧰 Instalação
-bash
-Copiar
-Editar
+### 🗃️ Gestão de Conversas
+- Histórico de chats salvo automaticamente.
+- Interface para apagar conversas antigas.
+
+### 🔒 Segurança de API
+- Sua chave da API Gemini é salva com segurança usando o **Keyring** do sistema operacional.
+
+### 🛠️ Comunicação Resiliente com a API
+- Controle inteligente de **tokens**.
+- Tentativas automáticas em caso de falha na requisição.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+| Componente        | Descrição                                  |
+|-------------------|---------------------------------------------|
+| **Linguagem**     | Python 3.10+                                |
+| **GUI**           | CustomTkinter                               |
+| **Backend**       | Flask (servidor local)                      |
+| **IA**            | Google Gemini API (gemini-1.5-flash-latest) |
+| **Banco de Dados**| SQLite                                      |
+| **Leitor de PDFs**| PyPDF2                                      |
+| **Segurança**     | Keyring (armazenamento seguro de API key)  |
+
+---
+
+## ⚙️ Como Executar
+
+### ✅ Pré-requisitos
+
+- Python 3.10 ou superior
+- Conta no Google Cloud com acesso à Gemini API
+- Chave de API válida do Gemini
+
+---
+
+## 🧰 Instalação
+
+```bash
 # Clone o repositório
 git clone https://github.com/EmersonRicardo0/AI-Tech-Expert.git
 cd AI-Tech-Expert
@@ -58,29 +87,35 @@ python3 -m venv venv
 
 # Ative o ambiente virtual
 source venv/bin/activate      # macOS/Linux
-# venv\Scripts\activate.bat   # Windows (cmd)
+venv\Scripts\activate.bat     # Windows (cmd)
 
 # Instale as dependências
 pip install -r requirements.txt
-🚀 Execução
-1. Inicie o servidor Flask (em um terminal separado):
+````
 
-bash
-Copiar
-Editar
+---
+
+## 🚀 Execução
+
+### 1. Inicie o servidor Flask (em um terminal separado):
+
+```bash
 python server.py
-2. Inicie a interface gráfica:
+```
 
-bash
-Copiar
-Editar
+### 2. Inicie a interface gráfica:
+
+```bash
 python main.py
-🧠 Dica: Na primeira execução, o app pedirá sua chave da API Gemini. Ela será salva com segurança via keyring.
+```
 
-📂 Estrutura do Projeto
-pgsql
-Copiar
-Editar
+> 🧠 Na primeira execução, será solicitada sua chave da API Gemini. Ela será salva de forma segura com **keyring**.
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
 AI-Tech-Expert/
 ├── assets/
 │   ├── ai_icon.png
@@ -94,3 +129,40 @@ AI-Tech-Expert/
 ├── main.py
 ├── requirements.txt
 └── README.md
+```
+
+---
+
+## 🧪 Status do Projeto
+
+✅ MVP funcional
+🚧 Em desenvolvimento contínuo
+🧩 Aberto para contribuições futuras
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
+---
+
+## 🤝 Contribuindo
+
+Pull requests são bem-vindos! Para mudanças importantes, abra uma issue primeiro para discutir o que você gostaria de mudar.
+
+---
+
+## ✉️ Contato
+
+Desenvolvido com 💻 por **Emerson Ricardo**
+📧 [silvaemerson797@gmail.com](mailto:emerson.ricardo@email.com)
+
+---
+
+```
+
+Se quiser, posso te ajudar a gerar esse `README.md` direto em um arquivo. Só dizer "gera o arquivo aí" que eu já te entrego prontinho pra usar!
+
+Curtiu o visual e organização? Quer adicionar selo de build, GIF ou badge? Posso turbinar isso ainda mais! 💪
+```
