@@ -155,8 +155,8 @@ Pull requests são bem-vindos! Para mudanças importantes, abra uma issue primei
 
 ## ✉️ Contato
 
-Desenvolvido com 💻 por **Emerson Ricardo**
-📧 [silvaemerson797@gmail.com](mailto:emerson.ricardo@email.com)
+Desenvolvido com 💻 por **Emerson Silva Ricardo**
+📧 [silvaemerson797@gmail.com](mailto:emerson.ricardo@gmail.com)
 
 ---
 
