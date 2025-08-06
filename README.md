@@ -1,158 +1,128 @@
+# 🤖 AI Tech Expert – Seu Assistente de IA Desktop para macOS
 
-````markdown
-# 🤖 AI Tech Expert
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/EmersonRicardo0/AI-Tech-Expert?style=flat-square)
+![GitHub language count](https://img.shields.io/github/languages/count/EmersonRicardo0/AI-Tech-Expert?style=flat-square)
+![License](https://img.shields.io/github/license/EmersonRicardo0/AI-Tech-Expert?style=flat-square)
 
-Um assistente de desktop inteligente com interface moderna, IA poderosa e base de conhecimento personalizada.
+---
 
-[Screenshot do AI Tech Expert](assets/1.png)
+> **AI Tech Expert** é um assistente inteligente desktop com interface moderna, IA poderosa e base de conhecimento personalizada — pensado para profissionais de TI que querem agilizar o dia a dia com inteligência artificial de ponta.
 
+---
+
+## 🎥 Demonstração Rápida
+
+![Demonstração do AI Tech Expert](assets/demo.gif)
 
 ---
 
 ## 🚀 Sobre o Projeto
 
-O **AI Tech Expert** vai muito além de um simples chatbot: é uma ferramenta de produtividade com inteligência artificial, desenvolvida em **Python**, que utiliza a **API Google Gemini 1.5 Flash**.
+Este app vai muito além do chat básico: ele permite consultas inteligentes baseadas em documentos locais (PDFs, TXTs) e perfis dinâmicos de IA que se adaptam ao seu estilo técnico e tom preferido.
 
-A IA é capaz de:
-- Ler e entender **documentos locais** (PDFs e TXTs),
-- Assumir **perfis de especialista** que adaptam o tom e a profundidade técnica das respostas.
-
----
-
-## ✨ Funcionalidades
-
-### ✅ Perfis de Especialistas
-- **Engenheiro de Redes**
-- **SysAdmin Linux**
-- **Professor Didático**
-- *...e outros perfis que você pode adicionar!*
-
-### 📂 Base de Conhecimento Personalizada
-- Faça upload de PDFs, artigos técnicos ou manuais.
-- A IA consulta seus arquivos como fonte primária.
-
-![Base de Conhecimento](assets/5.png)
-
-### 🖼️ Interface Moderna com CustomTkinter
-- Visual clean, temas claro e escuro.
-- Navegação fluida e responsiva.
-
-![Interface](assets/2.png)
-
-### 🗃️ Gestão de Conversas
-- Histórico de chats salvo automaticamente.
-- Interface para apagar conversas antigas.
-
-### 🔒 Segurança de API
-- Sua chave da API Gemini é salva com segurança usando o **Keyring** do sistema operacional.
-
-### 🛠️ Comunicação Resiliente com a API
-- Controle inteligente de **tokens**.
-- Tentativas automáticas em caso de falha na requisição.
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-| Componente        | Descrição                                  |
-|-------------------|---------------------------------------------|
-| **Linguagem**     | Python 3.10+                                |
-| **GUI**           | CustomTkinter                               |
-| **Backend**       | Flask (servidor local)                      |
-| **IA**            | Google Gemini API (gemini-1.5-flash-latest) |
-| **Banco de Dados**| SQLite                                      |
-| **Leitor de PDFs**| PyPDF2                                      |
-| **Segurança**     | Keyring (armazenamento seguro de API key)  |
-
----
-
-## ⚙️ Como Executar
-
-### ✅ Pré-requisitos
-
-- Python 3.10 ou superior
-- Conta no Google Cloud com acesso à Gemini API
-- Chave de API válida do Gemini
-
----
-
-> [!TIP] 
->🧰 Instalação
-```bash
-# Clone o repositório
-git clone https://github.com/EmersonRicardo0/AI-Tech-Expert.git
-cd AI-Tech-Expert
-
-# Crie o ambiente virtual
-python3 -m venv venv
-
-# Ative o ambiente virtual
-source venv/bin/activate      # macOS/Linux
-venv\Scripts\activate.bat     # Windows (cmd)
-
-# Instale as dependências
-pip install -r requirements.txt
-````
-
----
-
-## 🚀 Execução
-
-### 1. Inicie o servidor Flask (em um terminal separado):
-
-```bash
-python server.py
-```
-
-### 2. Inicie a interface gráfica:
-
-```bash
-python main.py
-```
-
-> 🧠 Na primeira execução, será solicitada sua chave da API Gemini. Ela será salva de forma segura com **keyring**.
+- **Perfis de Especialistas:** Escolha entre Engenheiro de Redes, SysAdmin Linux ou Professor Didático.
+- **Base Personalizada:** Adicione seus próprios manuais e artigos para enriquecer as respostas.
+- **Interface Moderna:** Visual clean com tema claro/escuro via CustomTkinter.
+- **Segurança:** API key armazenada com segurança via Keyring.
+- **Robustez:** Controle de tokens e tentativas automáticas para evitar travamentos.
 
 ---
 
 ## 📁 Estrutura do Projeto
 
-```
+```plaintext
 AI-Tech-Expert/
 ├── assets/
 │   ├── ai_icon.png
 │   ├── user_icon.png
-│   └── screenshot.png
-├── app_gui.py
+│   └── demo.gif
+├── main.py
 ├── server.py
 ├── gemini_integration.py
 ├── database.py
 ├── config.py
-├── main.py
 ├── requirements.txt
 └── README.md
-```
+⚙️ Como Rodar Localmente
+1. Clone o repositório
+bash
+Copiar
+Editar
+git clone https://github.com/EmersonRicardo0/AI-Tech-Expert.git
+cd AI-Tech-Expert
+2. Crie e ative o ambiente virtual
+bash
+Copiar
+Editar
+python3 -m venv venv
+source venv/bin/activate   # macOS/Linux
+# venv\Scripts\activate.bat # Windows (cmd)
+3. Instale as dependências
+bash
+Copiar
+Editar
+pip install -r requirements.txt
+4. Inicie o servidor Flask (em outro terminal)
+bash
+Copiar
+Editar
+python server.py
+5. Rode a interface gráfica
+bash
+Copiar
+Editar
+python main.py
+Na primeira execução, o app pedirá sua chave da API Gemini, que será armazenada com segurança via Keyring.
 
----
+📦 Gerando o .app e .dmg no macOS
+1. Gere o app .app usando py2app (se ainda não gerou)
+bash
+Copiar
+Editar
+python setup.py py2app
+2. Crie a pasta release se não existir
+bash
+Copiar
+Editar
+mkdir -p release
+3. Crie o arquivo .dmg
+bash
+Copiar
+Editar
+create-dmg 'dist/AI Tech Expert.app' \
+  --overwrite \
+  --dmg-title='AI Tech Expert' \
+  --app-drop-link=~/Desktop \
+  ./release
+4. Teste o .dmg
+Abra o .dmg na pasta release
 
-## 🧪 Status do Projeto
+Arraste o app para Aplicativos
 
-✅ MVP funcional
-🚧 Em desenvolvimento contínuo
-🧩 Aberto para contribuições futuras
+Rode o AI Tech Expert normalmente
 
----
+⚠️ Erros Comuns e Como Resolver
+Erro	Possível causa	Solução
+ENOENT: no such file or directory	Arquivo ou pasta não encontrados	Verifique caminhos e nomes corretos
+Could not find 'dist/AI Tech Expert.app'	App não gerado ou caminho errado	Execute python setup.py py2app
 
-## 📄 Licença
+🤝 Contribuições
+Contribuições são muito bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
 
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+📜 Licença
+MIT License © Emerson Silva Ricardo
 
----
+Feito com ☕ e muito amor por Emerson Silva Ricardo.
 
-## 🤝 Contribuindo
+🔗 Links Úteis
 
-Pull requests são bem-vindos! Para mudanças importantes, abra uma issue primeiro para discutir o que você gostaria de mudar.
+Google Gemini API
 
----
+CustomTkinter
+
+create-dmg (npm)
+
+
 
 ## ✉️ Contato
 
