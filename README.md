@@ -1,87 +1,93 @@
 AI Tech Expert 🤖
-Bem-vindo ao AI Tech Expert, um assistente de desktop inteligente desenvolvido em Python, que utiliza a API do Gemini para fornecer respostas especializadas e contextuais.
+Um assistente de desktop inteligente com interface moderna, IA poderosa e base de conhecimento personalizada.
 
-<!-- Sugestão: Coloque um screenshot da sua app com o nome 'screenshot.png' na pasta 'assets' -->
-
+<img src="assets/1.png" alt="Screenshot do AI Tech Expert" width="600"/>
 🚀 Sobre o Projeto
-O AI Tech Expert não é apenas um chatbot. É uma ferramenta poderosa que combina a capacidade do modelo Gemini 1.5 Flash com uma base de conhecimento local, permitindo que a IA responda a perguntas com base nos seus próprios documentos (PDFs e TXTs). Além disso, a IA pode assumir diferentes perfis de especialista para fornecer respostas adaptadas às suas necessidades.
+O AI Tech Expert vai muito além de um simples chatbot: é uma ferramenta de produtividade com inteligência artificial, desenvolvida em Python, que utiliza a API Google Gemini 1.5 Flash. Ele permite consultas inteligentes com base em documentos locais (PDFs e TXTs) e perfis de IA dinâmicos, adaptando o tom e a profundidade técnica das respostas de acordo com o perfil selecionado.
 
 ✨ Funcionalidades
-Perfis de IA Dinâmicos: Alterne entre especialistas como "Engenheiro de Redes", "SysAdmin Linux" ou "Professor Didático" para obter respostas no tom e com o detalhe técnico que precisa.
+✅ Perfis de Especialistas
+Altere entre perfis como Engenheiro de Redes, SysAdmin Linux ou Professor Didático.
 
-Base de Conhecimento Local: Adicione os seus próprios documentos (PDFs, manuais, artigos) para que a IA os utilize como fonte primária de informação.
+📂 Base de Conhecimento Personalizada
+Adicione seus próprios arquivos (PDFs, manuais, artigos) para que a IA utilize como fonte.
 
-Interface Moderna: Desenvolvido com CustomTkinter para um visual limpo, com suporte para temas claro e escuro.
+🖼️ Interface Moderna com CustomTkinter
+Tema claro e escuro, visual clean, fácil de navegar.
+<img src="assets/2.png" alt="Screenshot do AI Tech Expert" width="600"/>
+🗃️ Gestão de Conversas
+Histórico de chats salvo automaticamente, com opção de apagar.
 
-Gestão de Conversas: O seu histórico de conversas é guardado automaticamente. Continue conversas antigas ou apague as que já não são necessárias.
+🔒 Segurança de API
+A chave da API Gemini é armazenada com segurança usando o Keyring do sistema operacional.
 
-Robusto e Resiliente: Inclui lógica para gerir os limites de tokens da API e para tentar novamente em caso de erros de quota, garantindo uma experiência de uso fluida.
-
-Segurança: A sua chave de API é guardada de forma segura no chaveiro do sistema operativo.
+🛠️ Resiliência na Comunicação com a API
+Controle de limites de tokens e tentativas automáticas em caso de falhas.
 
 🛠️ Tecnologias Utilizadas
-Linguagem: Python 3
-
-Interface Gráfica (GUI): CustomTkinter
-
-Servidor Local: Flask
-
-Inteligência Artificial: Google Gemini API (gemini-1.5-flash-latest)
-
-Base de Dados: SQLite
-
-Leitura de PDFs: PyPDF2
-
-Armazenamento Seguro de Chaves: Keyring
+Componente	Descrição
+Linguagem	Python 3.10+
+GUI	CustomTkinter
+Backend	Flask (servidor local)
+IA	Google Gemini API (gemini-1.5-flash-latest)
+Banco de Dados	SQLite
+Leitor de PDFs	PyPDF2
+Segurança	Keyring para armazenamento seguro da API key
 
 ⚙️ Como Executar
-Pré-requisitos
+✅ Pré-requisitos
 Python 3.10 ou superior
 
-Uma chave de API do Google Gemini
+Conta no Google Cloud com acesso à Gemini API
 
-Passos para Instalação
-Clone o repositório:
+Chave de API do Gemini
 
-git clone [https://github.com/EmersonRicardo0/AI-Tech-Expert.git](https://github.com/EmersonRicardo0/AI-Tech-Expert.git)
+🧰 Instalação
+bash
+Copiar
+Editar
+# Clone o repositório
+git clone https://github.com/EmersonRicardo0/AI-Tech-Expert.git
 cd AI-Tech-Expert
-
-Crie um ambiente virtual e instale as dependências:
 
 # Crie o ambiente virtual
 python3 -m venv venv
 
-# Ative o ambiente (macOS/Linux)
-source venv/bin/activate
-# Ou no Windows (cmd.exe)
-# venv\Scripts\activate.bat
+# Ative o ambiente virtual
+source venv/bin/activate      # macOS/Linux
+# venv\Scripts\activate.bat   # Windows (cmd)
 
-# Instale as bibliotecas necessárias
-pip install -r requirements.txt 
+# Instale as dependências
+pip install -r requirements.txt
+🚀 Execução
+1. Inicie o servidor Flask (em um terminal separado):
 
-(Nota: Será necessário criar um ficheiro requirements.txt com as bibliotecas do projeto)
-
-Execute o Servidor:
-Abra um terminal e inicie o servidor Flask. Deixe este terminal a correr em segundo plano.
-
+bash
+Copiar
+Editar
 python server.py
+2. Inicie a interface gráfica:
 
-Execute a Aplicação Principal:
-Abra outro terminal (com o ambiente virtual ativado) e inicie a interface gráfica.
-
+bash
+Copiar
+Editar
 python main.py
-
-Na primeira vez que executar, a aplicação irá pedir a sua chave de API do Gemini, que será guardada de forma segura.
+🧠 Dica: Na primeira execução, o app pedirá sua chave da API Gemini. Ela será salva com segurança via keyring.
 
 📂 Estrutura do Projeto
-/AI-Tech-Expert
+pgsql
+Copiar
+Editar
+AI-Tech-Expert/
 ├── assets/
 │   ├── ai_icon.png
-│   └── user_icon.png
+│   ├── user_icon.png
+│   └── screenshot.png
 ├── app_gui.py
 ├── server.py
 ├── gemini_integration.py
 ├── database.py
 ├── config.py
 ├── main.py
-└── requirements.txt
+├── requirements.txt
+└── README.md
