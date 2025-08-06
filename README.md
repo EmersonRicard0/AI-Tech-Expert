@@ -75,14 +75,13 @@ Na primeira vez que executar, a aplicação irá pedir a sua chave de API do Gem
 
 📂 Estrutura do Projeto
 /AI-Tech-Expert
-|
-├── assets/                 # Ícones e outros recursos visuais
+├── assets/
 │   ├── ai_icon.png
 │   └── user_icon.png
-├── app_gui.py              # Código da interface gráfica (front-end)
-├── server.py               # Servidor Flask (back-end) que processa os pedidos
-├── gemini_integration.py   # Módulo central para comunicar com a API do Gemini
-├── database.py             # Gestão do banco de dados SQLite (base de conhecimento)
-├── config.py               # Configurações e prompts dos perfis da IA
-├── main.py                 # Ponto de entrada para iniciar a aplicação
-└── requirements.txt        # Lista de dependências Python
+├── app_gui.py
+├── server.py
+├── gemini_integration.py
+├── database.py
+├── config.py
+├── main.py
+└── requirements.txt
