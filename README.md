@@ -76,8 +76,8 @@ A IA é capaz de:
 
 ---
 
-## 🧰 Instalação
-
+> [!TIP] 🧰 Instalação
+>
 ```bash
 # Clone o repositório
 git clone https://github.com/EmersonRicardo0/AI-Tech-Expert.git
