@@ -1,8 +1,10 @@
 # 🤖 AI Tech Expert – Seu Assistente de IA Desktop para macOS
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/EmersonRicardo0/AI-Tech-Expert?style=flat-square)
-![GitHub language count](https://img.shields.io/github/languages/count/EmersonRicardo0/AI-Tech-Expert?style=flat-square)
-![License](https://img.shields.io/github/license/EmersonRicardo0/AI-Tech-Expert?style=flat-square)
+<p align="center">
+  <img src="https://img.shields.io/github/v/release/EmersonRicard0/AI-Tech-Expert?style=flat-square" alt="Latest Release">
+  <img src="https://img.shields.io/github/languages/count/EmersonRicard0/AI-Tech-Expert?style=flat-square" alt="Language Count">
+  <img src="https://img.shields.io/github/license/EmersonRicard0/AI-Tech-Expert?style=flat-square" alt="License">
+</p>
 
 ---
 
