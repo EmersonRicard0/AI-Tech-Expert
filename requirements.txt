@@ -1,0 +1,10 @@
+# Crie o ambiente virtual
+python3 -m venv venv
+
+# Ative o ambiente (macOS/Linux)
+source venv/bin/activate
+# Ou no Windows (cmd.exe)
+# venv\Scripts\activate.bat
+
+# Instale as bibliotecas necessárias
+pip install -r requirements.txt 
