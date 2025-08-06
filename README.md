@@ -12,7 +12,7 @@ Altere entre perfis como Engenheiro de Redes, SysAdmin Linux ou Professor Didát
 📂 Base de Conhecimento Personalizada
 Adicione seus próprios arquivos (PDFs, manuais, artigos) para que a IA utilize como fonte.
 
-<img src="assets/6.png" alt="Screenshot do AI Tech Expert" width="600"/>
+<img src="assets/7.png" alt="Screenshot do AI Tech Expert" width="600"/>
 
 🖼️ Interface Moderna com CustomTkinter
 Tema claro e escuro, visual clean, fácil de navegar.
