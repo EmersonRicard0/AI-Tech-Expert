@@ -7,3 +7,12 @@ CTkMessagebox==2.7
 PyPDF2==3.0.1
 Flask==3.1.1
 google-generativeai==0.8.5
+
+# Passo 1: Cria o ambiente virtual (uma pasta chamada 'venv')
+python -m venv venv
+
+# Passo 2: Ativa o ambiente virtual (para Windows)
+.\venv\Scripts\activate
+
+# Passo 3: Instala todas as dependências do projeto de uma só vez
+pip install -r requirements.txt
