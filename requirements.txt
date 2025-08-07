@@ -1,10 +1,9 @@
-# Crie o ambiente virtual
-python3 -m venv venv
-
-# Ative o ambiente (macOS/Linux)
-source venv/bin/activate
-# Ou no Windows (cmd.exe)
-# venv\Scripts\activate.bat
-
-# Instale as bibliotecas necessárias
-pip install -r requirements.txt 
+customtkinter==5.2.2
+keyring==25.6.0
+requests==2.32.4
+Pillow==11.3.0
+reportlab==4.4.3
+CTkMessagebox==2.7
+PyPDF2==3.0.1
+Flask==3.1.1
+google-generativeai==0.8.5
