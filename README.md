@@ -1,5 +1,5 @@
 markdown
-# 🌟 AI Tech Expert - Seu Assistente de IA Inteligente
+# 🤖 AI Tech Expert - Seu Assistente de IA Inteligente
 
 <div align="center">
   <img src="https://via.placeholder.com/800x400?text=AI+Tech+Expert+Demo" alt="App Demo" width="600"/>
