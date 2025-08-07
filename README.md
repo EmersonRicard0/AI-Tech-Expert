@@ -5,7 +5,7 @@ markdown
   <img src="https://via.placeholder.com/800x400?text=AI+Tech+Expert+Demo" alt="App Demo" width="600"/>
   
   <p>
-    <img src="https://img.shields.io/badge/version-1.0.0-blue" alt="Version">
+    <img src="https://img.shields.io/badge/version-1.0.1-blue" alt="Version">
     <img src="https://img.shields.io/badge/platform-macOS|Windows-lightgrey" alt="Platform">
     <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
   </p>
@@ -41,10 +41,10 @@ markdown
 git clone https://github.com/seuuser/ai-tech-expert.git
 
 # Instale as dependências
-pip install -r requirements.txt
+pip3.13 install -r requirements.txt
 
 # Execute o aplicativo
-python main.py
+python3.13 main.py
 🖼️ Screenshots
 <div align="center"> <img src="https://via.placeholder.com/300x200?text=Interface+Principal" width="45%"> <img src="https://via.placeholder.com/300x200?text=Modo+Escuro" width="45%"> </div>
 🚀 Roadmap
