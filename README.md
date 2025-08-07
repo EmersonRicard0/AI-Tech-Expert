@@ -107,7 +107,7 @@ Could not find 'dist/AI Tech Expert.app'	App não gerado ou caminho errado	Execu
 Contribuições são muito bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
 
 📜 Licença
-MIT License © Emerson Silva Ricardo
+© Emerson Silva Ricardo
 
 Feito com ☕ e muito amor por Emerson Silva Ricardo.
 
