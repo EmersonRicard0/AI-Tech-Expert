@@ -75,13 +75,6 @@ Seu Nome - @seutwitter - email@exemplo.com
 
 Project Link: https://github.com/seuuser/ai-tech-expert
 
-text
 
-### Dicas para melhorar ainda mais:
-1. Substitua os placeholders por imagens reais do seu projeto
-2. Adicione um GIF animado mostrando o app em funcionamento
-3. Inclua badges de estatísticas (stars, forks, issues)
-4. Adicione uma seção de "FAQ" ou "Troubleshooting"
-5. Inclua um link para documentação detalhada
 
-Quer que eu ajuste algo específico no design ou conteúdo?
+
