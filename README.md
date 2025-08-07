@@ -67,14 +67,9 @@ Push para a Branch (git push origin feature/AmazingFeature)
 
 Abra um Pull Request
 
-📜 Licença
-Distribuído sob a licença MIT. Veja LICENSE para mais informações.
 
-✉️ Contato
-Seu Nome - @seutwitter - email@exemplo.com
+## ✉️ Contato
 
-Project Link: https://github.com/seuuser/ai-tech-expert
-
-
-
+Desenvolvido com 💻 por **Emerson Silva Ricardo**
+📧 [silvaemerson797@gmail.com](mailto:emerson.ricardo@gmail.com)
 
